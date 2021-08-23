@@ -22,6 +22,24 @@ async function xdotoolRun(args: string[] = []) {
     return (new TextDecoder().decode(await xdotool.output()))
 }
 
+/**
+ * Type a given keystroke. Examples being "alt+r", "Control_L+J", "ctrl+alt+n", "BackSpace".
+ *
+ * Generally, any valid X Keysym string will work. Multiple keys are separated by ’+’. Aliases exist for "alt", "ctrl", "shift", "super", and "meta" which all map to Foo_L, such as Alt_L and Control_L, etc.
+ *
+ * In cases where your keyboard doesn’t actually have the key you want to type, xdotool will automatically find an unused keycode and use that to type the key.
+ *
+ * Example: Send the keystroke "F2"
+ * ```key("F2")```
+ *
+ * Example: Send ’a’ with an accent over it (not on English keyboards, but still works with xdotool)
+ * ```key("Aacute")```
+ * 
+ * @param key keystroke
+ * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
+ * @param delay Delay between keystrokes. Default is 12ms.
+ * @param clearmodifiers Clear modifiers before sending keystrokes. See CLEARMODIFIERS below.
+ */
 async function key(
     key: string,
     window = "",
@@ -34,6 +52,13 @@ async function key(
         key])
 }
 
+/**
+ * Same as `key()`, except only keydown (press) events are sent.
+ * @param key keystroke
+ * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
+ * @param delay Delay between keystrokes. Default is 12ms.
+ * @param clearmodifiers Clear modifiers before sending keystrokes. See CLEARMODIFIERS below.
+ */
 async function keyDown(
     key: string,
     window = "",
@@ -46,6 +71,13 @@ async function keyDown(
         key])
 }
 
+/**
+ * Same as `key()`, except only keyup (release) events are sent.
+ * @param key keystroke
+ * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
+ * @param delay Delay between keystrokes. Default is 12ms.
+ * @param clearmodifiers Clear modifiers before sending keystrokes. See CLEARMODIFIERS below.
+ */
 async function keyUp(
     key: string,
     window = "",
