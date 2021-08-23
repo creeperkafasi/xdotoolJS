@@ -118,4 +118,4 @@ async function typeUnicode(
     await type(text, window, delay, clearmodifiers)
 }
 
-export { xdotoolRun, key, keyDown, keyUp, type, typeUnicode }
+export { key, keyDown, keyUp, type, typeUnicode }

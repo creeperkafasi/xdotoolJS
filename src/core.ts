@@ -19,7 +19,7 @@
         cmd: ["xdotool"].concat(args), stdout: "piped", stderr: "piped", stdin: "piped"
     })
 
-    return (new TextDecoder().decode(await xdotool.output()))
+    return (new TextDecoder().decode(await xdotool.output())) || (new TextDecoder().decode(await xdotool.stderrOutput()))
 }
 
 export {xdotoolRun}

@@ -2,13 +2,13 @@
 
 ## REQUIRES RUN PERMISSIONS, RUN WITH `--allow-run`
 
-## Current Progress:
+## Current Progress
 
 - Keyboard
   - [X] Keyboard Implementation
   - [X] Keyboard Documentation
 - Mouse
-  - [ ] Mouse Implementation
+  - [X] Mouse Implementation
   - [ ] Mouse Documentation
 - Window
   - [ ] Window Implementation
