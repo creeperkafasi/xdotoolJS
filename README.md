@@ -6,7 +6,7 @@
 
 - Keyboard
   - [X] Keyboard Implementation
-  - [ ] Keyboard Documentation
+  - [X] Keyboard Documentation
 - Mouse
   - [ ] Mouse Implementation
   - [ ] Mouse Documentation
