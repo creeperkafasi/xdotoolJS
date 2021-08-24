@@ -11,7 +11,7 @@
   - [X] Mouse Implementation
   - [X] Mouse Documentation
 - Window
-  - [ ] Window Implementation
+  - [X] Window Implementation
   - [ ] Window Documentation
 - Desktop/Window
   - [ ] Desktop/Window Implementation
