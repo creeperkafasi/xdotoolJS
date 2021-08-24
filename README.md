@@ -1,4 +1,4 @@
-# xdotoolJS - a deno.js wrapper around the GNU/Linux automation tool, xdotool
+# xdotoolJS - a deno.js wrapper around the GNU/Linux X server automation tool, xdotool
 
 ## REQUIRES RUN PERMISSIONS, RUN WITH `--allow-run`
 
