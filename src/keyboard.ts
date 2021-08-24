@@ -38,6 +38,7 @@ async function key(
 
 /**
  * Same as `key()`, except only keydown (press) events are sent.
+ * 
  * @param key keystroke
  * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
  * @param delay Delay between keystrokes. Default is 12ms.
@@ -57,6 +58,7 @@ async function keyDown(
 
 /**
  * Same as `key()`, except only keyup (release) events are sent.
+ * 
  * @param key keystroke
  * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
  * @param delay Delay between keystrokes. Default is 12ms.
@@ -81,6 +83,7 @@ async function keyUp(
  * 
  * Example: to type ’Hello world!’ you would do:
  * ```type('Hello world!')```
+ * 
  * @param text something to type
  * @param window Send keystrokes to a specific window id. See " SENDEVENT NOTES" below. The default, if no window is given, depends on the window stack. If the window stack is empty the current window is typed at using XTEST. Otherwise, the default is "%1" (see " WINDOW STACK" ).
  * @param delay Delay between keystrokes. Default is 12ms.

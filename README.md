@@ -9,7 +9,7 @@
   - [X] Keyboard Documentation
 - Mouse
   - [X] Mouse Implementation
-  - [ ] Mouse Documentation
+  - [X] Mouse Documentation
 - Window
   - [ ] Window Implementation
   - [ ] Window Documentation
