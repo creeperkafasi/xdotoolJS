@@ -116,7 +116,7 @@ async function typeUnicode(
     window = "",
     delay: number | undefined = undefined,
     clearmodifiers = false) {
-    await key(" ")
+    await type(" ")
     await key("BackSpace")
     await type(text, window, delay, clearmodifiers)
 }
