@@ -35,7 +35,7 @@ async function mouseMove(
     if (sync)
         options.push("--sync")
 
-    return await xdotoolRun(["mousemove"].concat(options).concat([x.toString(), y.toString()]))
+    return await xdotoolRun(["mousemove"].concat(options).concat(["--", x.toString(), y.toString()]))
 }
 
 
@@ -62,7 +62,7 @@ async function mouseMoveRelative(
     if (sync)
         options.push("--sync")
 
-    return await xdotoolRun(["mousemove_relative"].concat(options).concat([x.toString(), y.toString()]))
+    return await xdotoolRun(["mousemove_relative"].concat(options).concat(["--", x.toString(), y.toString()]))
 }
 
 /**
