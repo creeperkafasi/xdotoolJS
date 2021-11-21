@@ -154,7 +154,7 @@ async function mouseUp(
     if (window)
         options.push("--window", window)
 
-    return await xdotoolRun(["mouseUp"].concat(options).concat([button.toString()]))
+    return await xdotoolRun(["mouseup"].concat(options).concat([button.toString()]))
 }
 
 /**
